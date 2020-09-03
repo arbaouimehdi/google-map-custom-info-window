@@ -1,0 +1,179 @@
+#map {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Infos Window Style */
+
+/* Force the Initial Google Map Style */
+body .gm-style {
+  font-family: lato, sans-serif !important;
+}
+.gm-style-iw-d {
+  overflow: hidden !important;
+}
+.gm-style-iw {
+  width: 196px !important;
+  max-width: 196px !important;
+  font-size: 1.6rem !important;
+  padding: 0 !important;
+  border-radius: 0.3rem !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .gm-style-iw {
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+}
+@media (max-width: 320px) {
+  .gm-style-iw {
+    max-width: 196px !important;
+    overflow: hidden !important;
+  }
+}
+.gm-style-iw > div {
+  max-width: 196px !important;
+  width: 196px !important;
+}
+@media (min-width: 321px) and (max-width: 767px) {
+  .gm-style-iw > div {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 320px) {
+  .gm-style-iw > div {
+    max-width: 196px !important;
+  }
+}
+
+/* Infos Window Card Style */
+.parent-card-pin {
+  color: #666;
+  font: 400 11px Roboto, Arial, sans-serif;
+  font-family: lato, sans-serif !important;
+  cursor: default;
+  font-size: 1.6rem !important;
+  font-weight: 300;
+  box-sizing: inherit;
+}
+
+.card-pin {
+  width: 196px !important;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.card-pin img {
+  width: 100%;
+  height: auto;
+}
+
+.card-pin figure {
+  position: relative;
+  max-height: 18rem;
+  margin: 0;
+  border-radius: 0.3rem 0.3rem 0 0;
+  overflow: hidden;
+}
+
+.card-pin figure img {
+  opacity: 0.8;
+  will-change: opacity;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.card-pin figure figcaption {
+  display: none;
+}
+
+.classified-image-caption {
+  position: absolute;
+  z-index: -1;
+  font-size: 0.1rem;
+  opacity: 0.1;
+}
+
+.card-pin figure .cartouche {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.card-pin .card-pin__infos {
+  padding: 0.8rem 1.2rem 1.2rem;
+}
+
+.card-pin .container-price {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.card-pin .container-price .prix-nc {
+  font-weight: 400 !important;
+}
+
+.card-pin .card-pin-title {
+  display: block;
+  color: #333;
+  -webkit-transition: color 0.35s ease-in;
+  transition: color 0.35s ease-in;
+}
+
+.card-pin .card-pin-title .name {
+  color: #006882;
+}
+
+.card-pin .card-pin-title .program-name {
+  color: #006882;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: none;
+}
+
+.card-pin .card-pin-title .rooms {
+  line-height: normal;
+  text-transform: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card-pin .card-pin-title .localisation-all {
+  display: block;
+  font-weight: 400;
+  text-transform: none;
+  color: #999;
+  margin: 0.5rem 0;
+  line-height: 1;
+  font-size: 1.2rem;
+}
+
+.card-pin .card-pin-title .localisation-all .localisation-address {
+  display: none;
+}
+
+.card-pin .delivery {
+  position: relative;
+  font-size: 1.2rem;
+}
